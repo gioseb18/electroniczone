@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.contenedor{
+    border: 3px solid;
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 10px;
+}
+.griditem:nth-child(4){
+    grid-column: 1/3;
+}
+.griditem:nth-child(3){
+    background-color: crimson;
+    grid-column: 3/3;
+    grid-row: 1/3;
+}
+.griditem{
+    border: 3px bottom;
+}
+img{
+    width: 100%;
+}

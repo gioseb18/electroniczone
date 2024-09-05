@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/audi\ r8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    height: 100vh;
+
+}
+.nav{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 80%;
+    width: 20%;
+    border: 2px solid black;
+}
+.navegadorp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px 20px 15px 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.iconomenu{
+    color: white;
+}
+.navegadors{
+    padding-left: 10px;
+}
+li{
+    list-style: none;
+    color: white;
+    font-size: xx-large;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li:hover{
+    background-color: crimson;
+}
+@media(width<600px){
+    .nav{
+        display: none;
+    }
+    .check:checked ~ .nav{
+        display: flex;
+    }
+}
+section{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-size: 40px;
+}
